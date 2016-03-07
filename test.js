@@ -1,7 +1,7 @@
 import test from 'ava';
 import storedYoDefaults from './index';
 
-const input = [{
+const questions = [{
   name: 'moduleVersion',
   message: '☯ preferred version to start:',
   store: true,
@@ -28,7 +28,7 @@ const input = [{
 }];
 
 test('should storedYoDefaults', (t) =>
-  t.same(storedYoDefaults(input), {
+  t.same(storedYoDefaults(questions), {
     moduleVersion: '0.0.0',
     moduleLicense: 'MIT',
     moduleTest: 'tape',
