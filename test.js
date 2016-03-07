@@ -36,3 +36,6 @@ test('should storedYoDefaults', (t) =>
 
 test('should storedYoDefaults invalid input', (t) =>
   t.throws(() => { storedYoDefaults(); }, /Expected array, but got undefined/));
+
+test('should storedYoDefaults invalid input v2', (t) =>
+  t.throws(() => { storedYoDefaults(['a', 'b']); }, /Expected hash/));
