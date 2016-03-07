@@ -16,28 +16,52 @@
 ```js
 import storedYoDefaults from 'stored-yo-defaults';
 
-storedYoDefaults('unicorns'); // unicorns
+const questions = [{
+  name: 'moduleVersion',
+  message: '☯ preferred version to start:',
+  store: true,
+  default: '0.0.0',
+}, {
+  name: 'moduleLicense',
+  message: '☯ preferred license:',
+  store: true,
+  default: 'MIT',
+}, {
+  name: 'moduleTest',
+  message: '☯ preferred test framework:',
+  type: 'list',
+  choices: ['mocha', 'tape', 'ava'],
+  store: true,
+  default: 1,
+}, {
+  name: 'username', // this one is not stored
+  default: 'asd',   // so it will be skipped
+}, {
+  name: 'website',
+  message: '☯ your website:', // this one has no default value
+  store: true,                // will be skipped as well
+}];
+
+storedYoDefaults(questions); /* {
+  moduleVersion: '0.0.0',
+  moduleLicense: 'MIT',
+  moduleTest: 'tape' } */
 ```
 
 ## API
 
-### storedYoDefaults(input, [options])
+### storedYoDefaults(questions)
 
-#### input
+```js
+// storedYoDefaults :: [Object] -> Object
+```
+
+#### questions
 
 *Required*  
-Type: `String`
+Type: `Array` of `Object`
 
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `Boolean`  
-Default: `false`
-
-Lorem ipsum.
+Yeoman questions
 
 ## License
 
