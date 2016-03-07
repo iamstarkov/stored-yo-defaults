@@ -19,12 +19,12 @@ const input = [{
   store: true,
   default: 1,
 }, {
-  name: 'username',
-  default: 'asd',
+  name: 'username', // this one is not stored
+  default: 'asd',   // so it will be skipped
 }, {
   name: 'website',
-  message: '☯ your website:',
-  store: true,
+  message: '☯ your website:', // this one has no default value
+  store: true,                // will be skipped as well
 }];
 
 test('should storedYoDefaults', (t) =>
