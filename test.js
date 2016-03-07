@@ -35,4 +35,4 @@ test('should storedYoDefaults', (t) =>
   }));
 
 test('should storedYoDefaults invalid input', (t) =>
-  t.throws(storedYoDefaults(), /q/));
+  t.throws(() => { storedYoDefaults(); }, /Expected array, but got undefined/));
