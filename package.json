@@ -1,7 +1,7 @@
 {
   "name": "stored-yo-defaults",
   "version": "0.0.0",
-  "description": "",
+  "description": "Get stored yeoman defaults",
   "main": "index.es5.js",
   "files": [
     "index.es5.js"

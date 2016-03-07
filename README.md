@@ -5,7 +5,7 @@
 [![Coveralls Status][coveralls-image]][coveralls-url]
 [![Dependency Status][depstat-image]][depstat-url]
 
-> 
+> Get stored yeoman defaults from array of questions
 
 ## Install
 
