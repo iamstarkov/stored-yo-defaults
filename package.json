@@ -47,7 +47,7 @@
     "rimraf": "^2.5.2"
   },
   "dependencies": {
-    "ramda": "^0.19.1",
+    "ramda": "^0.20.1",
     "rho-contracts": "^0.0.5"
   }
 }
