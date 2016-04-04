@@ -39,7 +39,7 @@
     "babel-register": "^6.6.0",
     "chokidar-cli": "^1.2.0",
     "coveralls": "^2.11.8",
-    "eslint": "^2.2.0",
+    "eslint": "^2.7.0",
     "eslint-config-airbnb": "^6.0.2",
     "eslint-plugin-require-path-exists": "^1.1.5",
     "npm-run-all": "^1.5.1",
