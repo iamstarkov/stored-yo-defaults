@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/iamstarkov/stored-yo-defaults#readme",
   "devDependencies": {
-    "ava": "^0.12.0",
+    "ava": "^0.15.0",
     "babel-cli": "^6.6.4",
     "babel-eslint": "^5.0.0",
     "babel-plugin-add-module-exports": "^0.1.2",
